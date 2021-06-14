@@ -1,0 +1,17 @@
+<h1 class="alert alert-danger"> {{ name }} nha </h1>
+
+<div class="form-group" style="margin-bottom: 10px;">
+    <label for="">Digite um nome: </label>
+    <input type="text" class="form-control" name="testo" [(ngModel)]="name" />
+
+</div>
+<button class="btn btn-success" (click)="add()" style="margin-bottom: 10px;">Adicionar</button>
+
+<table class="table">
+    <tr *ngFor="let item of vetor, let i = index">
+        <td>{{ i }}</td>
+        <td>{{ item }}</td>
+        <td><button class="btn btn-outline-danger" (click)="remover(i)">X</button></td>
+    </tr>
+
+</table>

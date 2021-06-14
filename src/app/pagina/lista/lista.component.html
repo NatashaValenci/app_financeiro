@@ -1,0 +1,19 @@
+
+
+<table class="table">
+  <tr>
+    <th>Nome</th>
+    <th>E-mail</th>
+    <th>Valor</th>
+    <th>Data de Nascimento</th>
+
+  </tr>
+  <tr>
+      <td>{{ usuario.nome | uppercase}}</td>
+      <td>{{ usuario.email | uppercase }}</td>
+      <td>{{ usuario.datanasc | date }}</td>
+      <td>{{ usuario.valor | currency:'BRL'}}</td>
+
+  </tr>
+
+</table>
